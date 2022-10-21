@@ -1,0 +1,57 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %}
+
+{{ title }}
+{% endblock %}
+
+
+{% block dropdown %}
+
+{% endblock %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col" style="height:11vh; font-size: 1.5vw">
+        <h1 class="display-1" style="font-size: 2.6vw; border-bottom: 7px solid #4d4d4d"><i
+                class="fa-solid fa-circle" style="color: #2c2c2c"></i>Картотека</h1>
+    </div>
+    <div class="w-100"></div>
+
+    <div class="col" style="background:white; border: thick double gray;">
+        <div class="row">
+            <div class="col">
+                dddddd
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="w-100"></div>
+<div class="col" style="height:4vh; background-color:#fca521"></div>
+<div class="w-100"></div>
+
+<div class="w-100"></div>
+<div class="col">
+
+    {% for el in history %}
+    <div class="alert alert-warning">
+        <p>№: {{ el.id }}: Кол-во комнат: {{ el.count_room }} Этаж: {{ el.floor }} Метраж: {{ el.square_meters }}
+            Район: {{ el.region }}
+        </p>
+    </div>
+
+    {% endfor %}
+
+
+</div>
+
+
+</div>
+<span>{{ error }}</span>
+{% endblock %}
+
+{% block custom_js %}
+{% endblock %}

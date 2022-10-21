@@ -1,0 +1,126 @@
+.container{
+    float: left;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    background-color: black;
+
+}
+
+header{
+    height: 10%;
+
+}
+.col-2{
+    background: #ff10da;
+    float: left;
+    height: 100vh;
+    max-height: 100%;
+    border-right: 7px solid #4d4d4d;
+}
+
+.col{
+    height: 8vh;
+    font-size: 2vw;
+}
+.col-4{
+    height: 8vh;
+    font-size: 2vw
+}
+input{
+    height: 6vh;
+    width: 100%;
+}
+h3 {
+    position: relative;
+    left: 10px;
+    margin-top: 30px;
+    font-size: 2.2vw;
+    color: white;
+}
+
+
+.col-2  ul {list-style:none}
+
+.col-2  ul li {
+    float: left;
+    margin-top: 4vh;
+    font-size: 1.3vw;
+    color: #fff;
+    display: block;
+    transition: transform .2s ease;
+}
+.col-2  ul a:hover{
+    text-decoration: none;
+}
+
+.col-2  ul li:hover, aside ul a:hover{
+    color: #FF8C00;
+    text-decoration: none;
+    transform: scale(1.05);
+
+}
+
+.card {
+    background-color: #2c2c2c;
+}
+
+container .fill .map
+{
+  min-height: 100vh;
+}
+/*
+.dropdown{
+    position: fixed;
+    right: 1vw;
+    top: 0vh;
+    font-size: 3vw;
+   }*/
+
+.dropbtn {
+    /*background: url('main/static/main/img/bars-solid.svg');*/
+    background-color: black;
+    color: white;
+    padding: 1.5vw;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #fca521;
+}
+
+.dropdown {
+    /*float: right;
+    position: relative;
+    display: inline-block;
+    position: fixed;
+    */
+    position: fixed;
+    right: 1vw;
+    top: 0vh;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}

@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+</head>
+<body>
+<form method="get" id="sortProduct">
+
+    <div class="box sort pull-right">
+        <span>Сортировка:</span>
+        <button name="orderby" value="id" type="submit">По умолчанию</button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="menu2">
+            <li><button name="orderby" value="-id" type="submit">По ид▼</button></li>
+            <li><button name="orderby" value="price" type="submit">По цене▲</button></li>
+            <li><button name="orderby" value="-price" type="submit">По цене▼</button></li>
+        </ul>
+    </div>
+    {% for el in estate %}
+    <div class="alert alert-warning">
+        <p>№: {{ el.id }}: Кол-во комнат: {{ el.count_room }} Этаж: {{ el.floor }} Метраж: {{ el.square_meters }}
+            Район: {{ el.region }} Цена: {{ el.price }}
+        </p>
+    </div>
+    {% endfor %}
+</form>
+</body>
+</html>

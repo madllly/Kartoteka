@@ -1,0 +1,17 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block content %}
+{% for el in estate %}
+<div class="col">
+    <div class="card shadow-sm">
+        <img src="{{ el.cover.url}} " width=auto height="155">
+        <div class="card-body">
+            <p class="card-text">Кваритра №: {{ el.id }}: Кол-во комнат: {{ el.count_room }} Этаж: {{ el.floor }}
+                Метраж: {{ el.square_meters }} Район: {{ el.region }} Цена: {{ el.price }}</p>
+        </div>
+    </div>
+</div>
+
+{% endfor %}
+
+{% endblock content %}
