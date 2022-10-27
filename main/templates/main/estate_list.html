@@ -3,7 +3,7 @@
 {% block content %}
 {% for el in estate %}
 <div class="col">
-    <div class="card shadow-sm">
+    <div class="card shadow-sm" style="min-width: 12rem;">
         <img src="{{ el.cover.url}} " width=auto height="155">
         <div class="card-body">
             <p class="card-text">Кваритра №: {{ el.id }}: Кол-во комнат: {{ el.count_room }} Этаж: {{ el.floor }}
